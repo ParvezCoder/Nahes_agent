@@ -3,12 +3,10 @@ st.cache_data.clear()  # for Streamlit v1.18+
 import os
 import asyncio
 import streamlit as st
-from dotenv import load_dotenv
 from agents import Agent, AsyncOpenAI, OpenAIChatCompletionsModel, Runner
 
 # Load environment variables
-load_dotenv()
-gemini_api_key = os.getenv("GEMINI_API_KEY")
+gemini_api_key = "AIzaSyDKwBsMJw96xlz4xNoHe_yj0KR1zHeYTV8"
 
 # Gemini API setup
 external_client = AsyncOpenAI(
